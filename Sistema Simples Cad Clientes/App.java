@@ -1,19 +1,24 @@
 public class App {
     public static void main(String[] args){
- 
-        Cliente[] vetCliente = new Cliente[1];
-        
-        vetCliente[0].setNome("aaaaaaaa");
-        vetCliente[0].setCpf("aaaaaaaa");
-        vetCliente[0].setEndereco("aaaaaaaa");
 
-        vetCliente[1].setNome("bbbbbbbbb");
-        vetCliente[1].setCpf("bbbbbbbbb");
-        vetCliente[1].setEndereco("bbbbbbbbb");
+        int d = 2;
+        Cliente[] vetCliente = new Cliente[d];
+
+        for(int i = 0; i < d; i++){
+            vetCliente[i] = new Cliente();
+        }
+    
+        vetCliente[0].setNome("TESTE UM");
+        vetCliente[0].setCpf("TESTE UM");
+        vetCliente[0].setEndereco("TESTE UM");
+
+        vetCliente[1].setNome("TESTE 123");
+        vetCliente[1].setCpf("TESTE DOIS");
+        vetCliente[1].setEndereco("TESTE DOIS"); 
 
         MetodosCliente metCliente = new MetodosCliente();
 
-        MetodosCliente.printCliente(vetCliente);
+        metCliente.printCliente(vetCliente);
 
     }
     

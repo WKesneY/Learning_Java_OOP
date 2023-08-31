@@ -1,4 +1,8 @@
+import java.util.Scanner;
+
 public class MetodosCliente {
+
+    Cliente vetorCliente[] = new Cliente[2];
 
     void printCliente(Cliente vet[]){
         System.out.printf("------------------CLIENTES CADASTRADOS--------------------");

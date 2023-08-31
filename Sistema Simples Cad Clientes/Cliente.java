@@ -1,28 +1,28 @@
 public class Cliente{
-    String nome;
-    String cpf;
-    String endereco;
+    private String nome;
+    private String cpf;
+    private String endereco;
 
-    void setNome(String nomeCliente){
-        nome = nomeCliente;
+    public void setNome(String nomeCliente){
+        this.nome = nomeCliente;
     }
 
-    void setCpf(String cpfCliente){
-        cpf = cpfCliente;
+    public void setCpf(String cpfCliente){
+        this.cpf = cpfCliente;
     }
 
-    void setEndereco(String endCliente){
-        endereco = endCliente;
+    public void setEndereco(String endCliente){
+        this.endereco = endCliente;
     }
 
-    String getNome(){
+    public String getNome(){
         return nome;
     }
-    String getCpf(){
+    public String getCpf(){
         return cpf;
     }
 
-    String getEndereco(){
+    public String getEndereco(){
         return endereco;
     }
 
