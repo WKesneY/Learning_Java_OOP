@@ -7,7 +7,7 @@ public class App {
         for(int i = 0; i < d; i++){
             vetCliente[i] = new Cliente();
         }
-    
+        
         vetCliente[0].setNome("TESTE UM");
         vetCliente[0].setCpf("TESTE UM");
         vetCliente[0].setEndereco("TESTE UM");
