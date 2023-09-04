@@ -14,10 +14,10 @@ public class MaiorEMenor {
         num2 = scanner.nextInt();
 
         if(num1 > num2){
-            System.out.println("-> PRIMEIRO NUMERO E MAIOR! <-");
+            System.out.println("-> [PRIMEIRO NUMERO E MAIOR!] <-");
         }else if(num1 < num2){
-            System.out.println("-> SEGUNDO NUMERO E MAIOR! <-");
-        }else System.out.println("-> AMBOS NUMEROS SAO IGUAIS <-");
+            System.out.println("-> [SEGUNDO NUMERO E MAIOR!] <-");
+        }else System.out.println("-> [AMBOS NUMEROS SAO IGUAIS!] <-");
 
 
     }

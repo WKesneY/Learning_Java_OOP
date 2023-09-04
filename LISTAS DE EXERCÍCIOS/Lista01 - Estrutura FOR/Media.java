@@ -13,7 +13,6 @@ public class Media {
             recebeNum = scanner.nextInt();
 
             vet[i] = recebeNum;
-            
         }
 
         for(int i = 0; i < vet.length; i++){
@@ -23,8 +22,8 @@ public class Media {
         int soma = 0;
         for(int i = 0; i < vet.length; soma+=vet[i], i++);
 
-        double media = soma / vet.length;
-        System.out.println("\n\n-> A MEDIA É: " + media + "<-");
+        double media = (double)soma /  (double)vet.length;
+        System.out.println("\n\n-> [A MEDIA É: " + media + "] <-");
 
     }
     

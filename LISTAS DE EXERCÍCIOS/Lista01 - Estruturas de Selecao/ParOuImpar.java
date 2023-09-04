@@ -10,8 +10,8 @@ public class ParOuImpar {
         num = scanner.nextInt();
 
         if(num % 2 == 0){
-            System.out.println("-> NUMERO PAR <-");
-        }else System.out.println(("-> NUMERO IMPAR <-"));
+            System.out.println("-> [NUMERO PAR] <-");
+        }else System.out.println(("-> [NUMERO IMPAR] <-"));
 
     }
     

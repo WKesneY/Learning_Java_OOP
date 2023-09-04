@@ -7,7 +7,7 @@ public class NomeDoMes {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("-------------- QUAL O NUM. DO MES?--------------");
-        System.out.printf("\n\nINFORME O NOME DO MES:");
+        System.out.printf("\n\nINFORME O NOME DO MES: ");
         String nomeMes = scanner.nextLine().toLowerCase(); //Para receber a String minúscula
 
         switch(nomeMes)
@@ -21,11 +21,7 @@ public class NomeDoMes {
             break;
 
             case "marco":
-            System.out.println("-> NUMERO CORRESPONDENTE =  <- 3"); 
-            break;
-
-            case "março":
-            System.out.println("-> NUMERO CORRESPONDENTE =  <- 3"); 
+            System.out.println("-> NUMERO CORRESPONDENTE = 3 <- "); 
             break;
 
             case "abril":

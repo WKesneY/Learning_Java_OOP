@@ -8,19 +8,17 @@ public class Idade{
 
         System.out.println("----------------------CHECAR IDADE----------------------");
 
-
         do{
-
         System.out.printf("\nINFORME SUA IDADE: ");
         idade = scanner.nextInt();
 
             if(idade >= 18){
-                System.out.printf("-> MAIOR DE IDADE! <-");
+                System.out.printf("-> [MAIOR DE IDADE!] <-");
                 break;
             }else if(idade >= 0 && idade < 18){
-                System.out.println("-> MENOR DE IDADE! <-");
+                System.out.println("-> [MENOR DE IDADE!] <-");
                 break;
-            }else System.out.println("-> IDADE INVÁLIDA! <-");
+            }else System.out.println("-> [IDADE INVÁLIDA!] <-");
 
         }while(idade < 0);
 
