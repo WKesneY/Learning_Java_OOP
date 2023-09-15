@@ -11,7 +11,6 @@ public class MetodosCliente {
             System.out.println("\nNome:" + vet[i].getNome());
             System.out.println("CPF:" + vet[i].getCpf());
             System.out.println("Endereço: " + vet[i].getEndereco());
-
         }
 
     }
