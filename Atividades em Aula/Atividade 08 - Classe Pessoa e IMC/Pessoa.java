@@ -35,13 +35,13 @@ public class Pessoa{
     }
 
     //Demais métodos
-    double imc; 
-    public double calcularIMC(){
+    public double imc; 
+    public double calcularIMC(Pessoa pessoa){
         imc =  peso / Math.pow(altura, 2);
         return imc;
     }
 
-    public String toString(){
+    public String toString(Pessoa pessoa){
         return "Nome: " + this.nome + ", Idade: " + this.idade + ", Altura: " + this.altura + ", Peso: " + this.peso + ".";
     }
 }

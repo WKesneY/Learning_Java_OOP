@@ -10,12 +10,15 @@ public class IMC {
         pessoaUm.getNome(scanner.nextLine());
         System.out.printf("\nInforme sua idade: ");
         pessoaUm.getIdade(scanner.nextInt());
-        System.out.printf("\nInforme sua idade: ");
+        System.out.printf("\nInforme sua altura: ");
         pessoaUm.getAltura(scanner.nextDouble());
         System.out.println("\nInforme seu peso: ");
         pessoaUm.getPeso(scanner.nextDouble());
 
-        //Pessoa 
+        //Pessoa cadastrada
+        
+        System.out.printf(" %.2f",pessoaUm.calcularIMC(pessoaUm));
+        pessoaUm.toString(pessoaUm);
 
 
     }
