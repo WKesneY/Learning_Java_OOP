@@ -2,17 +2,6 @@ public class ContaBancaria{
     protected String cliente;
     protected int numConta;
     protected double saldo;
-    
-    // Setters
-    // public void setCliente(String cliente) {
-    //     this.cliente = cliente;
-    // }
-    // public void setNumConta(int numConta) {
-    //     this.numConta = numConta;
-    // }
-    // public void setSaldo(double saldo) {
-    //     this.saldo = saldo;
-    // }
 
     //Construtor
     public ContaBancaria(String cliente, int numConta){
@@ -20,6 +9,18 @@ public class ContaBancaria{
         this.numConta = numConta;
         saldo = 0;
     }
+
+    // Setters
+    public void setCliente(String cliente) {
+        this.cliente = cliente;
+    }
+    public void setNumConta(int numConta) {
+        this.numConta = numConta;
+    }
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
     //Getters
     public String getCliente(){
         return cliente;
