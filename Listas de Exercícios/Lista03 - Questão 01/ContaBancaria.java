@@ -4,10 +4,10 @@ public class ContaBancaria{
     protected double saldo;
 
     //Construtor
-    public ContaBancaria(String cliente, int numConta){
+    public ContaBancaria(String cliente, int numConta, double saldo){
         this.cliente = cliente;
         this.numConta = numConta;
-        saldo = 0;
+        this.saldo = saldo;
     }
 
     // Setters
@@ -47,7 +47,8 @@ public class ContaBancaria{
         System.out.println("-----------DADOS BANCÁRIOS-----------");
         System.out.println("/Cliente: " + cliente);
         System.out.println("/Número da conta: " + numConta);
-        System.out.println("/Saldo bancário: " + saldo);
+        System.out.printf("/Saldo bancário: R$ %.2f", saldo);
+        System.out.println("\n");
     }
 
 }
