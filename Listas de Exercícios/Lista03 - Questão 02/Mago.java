@@ -11,6 +11,15 @@ public class Mago extends Personagens {
         setSaude(getSaude() + cura);
     }
 
+    //O ataque  a distância do mago será de acordo com sua inteligência 
+    public int habAtaque(){
+        int ataque = random.nextInt(getInteligencia()/2); //com chance de ter queimação
+        if(ataque % 2 == 0){
+            return ataque += 2;
+        }
+        return ataque;
+    }
+
 
 
     
