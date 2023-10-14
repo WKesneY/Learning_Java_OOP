@@ -3,7 +3,7 @@ public class Arqueiro extends Personagens {
     Random random = new Random();
 
     Arqueiro(){
-        super("Squirtle", 1, 0, 10, 5, 5, 10);
+        super("Squirtle", 1, 0, 10, 5, 5, 10, "Distância", "Fuga veloz");
     }
 
     //As habilidades do arqueiro variam de acordo com sua velocidade

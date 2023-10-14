@@ -3,7 +3,7 @@ public class Mago extends Personagens {
 
     Random random = new Random();
     Mago(){
-        super("Bulbassaur", 1, 0, 12, 6, 10, 5);
+        super("Bulbassaur", 1, 0, 12, 6, 10, 5, "Distãncia", "Curar");
     }
 
     public void habCurar(){
