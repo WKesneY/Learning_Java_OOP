@@ -44,11 +44,12 @@ public class ContaBancaria{
     }
 
     public void imprimirDados(){
-        System.out.println("-----------DADOS BANCÁRIOS-----------");
+        System.out.println("DADOS BANCÁRIOS");
         System.out.println("/Cliente: " + cliente);
         System.out.println("/Número da conta: " + numConta);
         System.out.printf("/Saldo bancário: R$ %.2f", saldo);
         System.out.println("\n");
     }
+
 
 }

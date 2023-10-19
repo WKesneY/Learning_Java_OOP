@@ -1,19 +1,19 @@
 public class ContaPoupanca extends ContaBancaria{
-    private int diaDeRendimento;
+    private double diaDeRendimento;
     
     //Contrutor
-    public ContaPoupanca(String cliente, int numConta, double saldo, int diaDeRendimento){
+    public ContaPoupanca(String cliente, int numConta, double saldo){
         super(cliente, numConta, saldo);
-        this.diaDeRendimento = diaDeRendimento;
+        diaDeRendimento = 0.005; //declarei o rendimento com o valor ao lado
 
     }
 
     //Getters
-    public int getDiaRendimento(){
+    public double getDiaRendimento(){
         return diaDeRendimento;
     }
-    public double calculaNovoSaldo(double diaDeRendimento){
-        setSaldo(getSaldo() * getDiaRendimento());
+    public double calculaNovoSaldo(){
+        setSaldo(getSaldo() + (getSaldo() * diaDeRendimento));
         return getSaldo();
     }
 

@@ -4,7 +4,7 @@ public class ContaEspecial extends ContaBancaria {
     //Contrutor
     ContaEspecial(String cliente, int getNumConta, double saldo){
         super(cliente, getNumConta, saldo);
-        limite = -500.00; //delarei um valor específico p/ o limite permitido (R$500,00).
+        limite = -500.00; //declarei um valor específico p/ o limite permitido (R$500,00).
     }
 
     //Setters
@@ -21,7 +21,7 @@ public class ContaEspecial extends ContaBancaria {
     public void sacar(double valor){
         if(getSaldo() - valor >= limite){
             setSaldo(getSaldo() - valor);;
-        }else System.out.println("VALOR DE SALDO INSULFICIENTE");
+        }else System.out.println("VALOR DE SALDO INSULFICIENTE\n");
     }
 
 
