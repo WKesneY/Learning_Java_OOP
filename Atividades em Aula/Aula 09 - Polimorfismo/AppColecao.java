@@ -25,7 +25,41 @@ public class AppColecao {
                 }
             }
             
-            if(resposta == 1){
+            // if(resposta == 1){
+                // scanner.nextLine();
+                // System.out.println("\nInforme os dados de seu e-Book: ");
+                // System.out.print("\nTitulo: ");
+                // String titulo = scanner.nextLine();
+                // System.out.print("\nAutor: ");
+                // String autor = scanner.nextLine();
+                // System.out.print("\nValor: ");
+                // double preco = scanner.nextDouble();
+                // System.out.print("\nTamanho do arquivo: ");
+                // double tamanhoArquivo = scanner.nextDouble();
+
+                // colecao[i] = new EBook(titulo, autor, preco, tamanhoArquivo);
+
+                // continue;
+
+            // }else{
+                // scanner.nextLine();
+                // System.out.println("Informe os dados de seu AudioLivro: ");
+                // System.out.print("\nTitulo: ");
+                // String titulo = scanner.nextLine();
+                // System.out.print("\nAutor: ");
+                // String autor = scanner.nextLine();
+                // System.out.print("\nValor: ");
+                // double preco = scanner.nextDouble();
+                // System.out.print("\nTempo de duração em minutos: ");
+                // int tempoDuracao = scanner.nextInt();
+
+                // colecao[i] = new AudioLivro(titulo, autor, preco, tempoDuracao);
+            //     continue;
+
+            // }
+
+            switch (resposta) {
+                case 1:
                 scanner.nextLine();
                 System.out.println("\nInforme os dados de seu e-Book: ");
                 System.out.print("\nTitulo: ");
@@ -38,24 +72,23 @@ public class AppColecao {
                 double tamanhoArquivo = scanner.nextDouble();
 
                 colecao[i] = new EBook(titulo, autor, preco, tamanhoArquivo);
-
-                continue;
-
-            }else{
+                break;
+            
+                case 2:
                 scanner.nextLine();
                 System.out.println("Informe os dados de seu AudioLivro: ");
                 System.out.print("\nTitulo: ");
-                String titulo = scanner.nextLine();
+                titulo = scanner.nextLine();
                 System.out.print("\nAutor: ");
-                String autor = scanner.nextLine();
+                autor = scanner.nextLine();
                 System.out.print("\nValor: ");
-                double preco = scanner.nextDouble();
+                preco = scanner.nextDouble();
                 System.out.print("\nTempo de duração em minutos: ");
                 int tempoDuracao = scanner.nextInt();
 
                 colecao[i] = new AudioLivro(titulo, autor, preco, tempoDuracao);
-                continue;
 
+                break;
             }
 
         }
