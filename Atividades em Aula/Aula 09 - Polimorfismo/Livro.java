@@ -19,4 +19,7 @@ public class Livro{
     public double getPreco(){
         return preco;
     }
+
+    //Método
+
 }

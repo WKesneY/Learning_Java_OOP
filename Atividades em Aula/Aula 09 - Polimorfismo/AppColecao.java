@@ -9,12 +9,12 @@ public class AppColecao {
         Livro[] colecao = new Livro[tamanhoArray];
 
         for(int i = 0; i < tamanhoArray; i++){
-            scanner.next();
-            System.out.println("Seu ítem é um Ebook ou Livro?");
+            scanner.nextLine();
+            System.out.println("\nSeu ítem é um Ebook ou Livro?");
             System.out.println("1 para EBook.\n2 para AudioLivro");
             int resposta = scanner.nextInt();
 
-            while(resposta != 1 || resposta != 2){
+            while(resposta != 1 && resposta != 2){
 
                 System.out.println("Informe novamente: ");
                 System.out.println("1 para e-Book.\n2 para AudioLivro");
@@ -26,8 +26,8 @@ public class AppColecao {
             }
             
             if(resposta == 1){
-                scanner.next();
-                System.out.println("Informe os dados de seu e-Book: ");
+                scanner.nextLine();
+                System.out.println("\nInforme os dados de seu e-Book: ");
                 System.out.print("\nTitulo: ");
                 String titulo = scanner.nextLine();
                 System.out.print("\nAutor: ");
@@ -38,8 +38,10 @@ public class AppColecao {
                 double tamanhoArquivo = scanner.nextDouble();
 
                 colecao[i] = new EBook(titulo, autor, preco, tamanhoArquivo);
+                continue;
+
             }else{
-                scanner.next();
+                scanner.nextLine();
                 System.out.println("Informe os dados de seu AudioLivro: ");
                 System.out.print("\nTitulo: ");
                 String titulo = scanner.nextLine();
@@ -51,6 +53,7 @@ public class AppColecao {
                 int tempoDuracao = scanner.nextInt();
 
                 colecao[i] = new AudioLivro(titulo, autor, preco, tempoDuracao);
+                continue;
 
             }
  
