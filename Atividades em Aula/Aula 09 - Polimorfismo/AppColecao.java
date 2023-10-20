@@ -38,6 +38,7 @@ public class AppColecao {
                 double tamanhoArquivo = scanner.nextDouble();
 
                 colecao[i] = new EBook(titulo, autor, preco, tamanhoArquivo);
+
                 continue;
 
             }else{
@@ -56,8 +57,10 @@ public class AppColecao {
                 continue;
 
             }
- 
+
         }
+
+        Livro.valorColecao(colecao);
     }
     
     

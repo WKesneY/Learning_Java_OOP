@@ -22,4 +22,16 @@ public class Livro{
 
     //Método
 
+    public static double valorColecao(Livro[] livro){
+        double valorTotal = 0.0;
+
+        for(int i = 0; i < livro.length; i++){
+            valorTotal = valorTotal + livro[i].getPreco();
+        }
+
+        System.out.printf("%.2f", valorTotal);
+
+        return valorTotal;
+    }
+
 }
