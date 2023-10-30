@@ -8,6 +8,7 @@ public class CartaoCredito extends FormaPagamento {
 
     public void realizarPagamento() {
        System.out.println("Pagamento com cartão de crédito " + numeroCartao + ", no valor de R$" + getValorTotal() + " realizado com sucesso!");
+       System.out.println();
     }
 
     public String getNumeroCartao() {
@@ -16,5 +17,7 @@ public class CartaoCredito extends FormaPagamento {
     public void setNumeroCartao(String numeroCartao) {
         this.numeroCartao = numeroCartao;
     }
+
+
 
 }

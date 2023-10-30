@@ -7,6 +7,7 @@ public class BoletoBancario extends FormaPagamento {
 
     public void realizarPagamento() {
         System.out.println("Pagamento com boleto bancário " + codigoBoleto + ", no valor de R$" + getValorTotal() + " realizado com sucesso!");
+        System.out.println();
     }
 
     public String getCodigoBoleto() {

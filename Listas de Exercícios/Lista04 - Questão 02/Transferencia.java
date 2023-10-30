@@ -7,7 +7,8 @@ public class Transferencia extends FormaPagamento {
     }
 
     public void realizarPagamento() {
-        System.out.println("Pagamento pro transferência bancária para o banco " + bancoDestino + ", no valor de R$" + getValorTotal() + " realizado com sucesso!");
+        System.out.println("Pagamento por transferência bancária para o banco " + bancoDestino + ", no valor de R$" + getValorTotal() + " realizado com sucesso!");
+        System.out.println();
     }
     
     public String getBancoDestino() {
