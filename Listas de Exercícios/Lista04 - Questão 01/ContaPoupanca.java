@@ -10,4 +10,9 @@ public class ContaPoupanca extends ContaBancaria{
         return getSaldo() + (getSaldo() * (taxaRendimento / 100));
     }
 
+    public void sacar(double valor){
+        if ((getSaldo() - valor) >= 0){
+            saldo -= valor;
+        }else System.out.println("Valor inválido.");
+    }
 }

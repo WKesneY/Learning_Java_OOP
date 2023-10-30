@@ -7,6 +7,12 @@ public class ContaCorrente extends ContaBancaria {
     }
 
     public double getSaldo(){
-        return getSaldo() + chequeEspecial; 
+        return saldo + chequeEspecial; 
+    }
+
+    public void sacar(double valor){
+        if ((valor <= getSaldo())){
+            saldo -= valor;
+        }else System.out.println("\nO valor informado ultrapassa o limite.");
     }
 }
